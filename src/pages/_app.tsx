@@ -54,7 +54,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
                 </PageContainer>
               </Flipper>
 
-              {/* <Footer /> */}
+              <Footer />
 
               <CommandPalette />
               {/* {isProd ? <Analytics /> : null} */}
