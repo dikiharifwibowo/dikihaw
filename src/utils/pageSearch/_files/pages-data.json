@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Increase coding productivity with task runner & SCSS",
+    "description": "Learn how to create create tusk runner with Gulp & learn how to use SCSS",
+    "link": "/posts/Increase-coding-productivity-with-task-runner-&-SCSS"
+  },
+  {
+    "title": "Mendalami Eloquent & Relationship di Laravel",
+    "description": "Belajar Eloquent & Relationship yang merupakan hal wajib diketahui oleh orang yang ingin belajar Laravel",
+    "link": "/posts/Mendalami-eloquent-&-elationship-di-laravel"
+  },
+  {
+    "title": "Menjadi junior programmer yang punya “akhlaq”",
+    "description": "Dari pengalaman saya menjadi junior programmer ada beberapa point yang wajib diketahui agar menjadi seorang junior programmer yg baik dan punya “akhlaq”. :D",
+    "link": "/posts/Menjadi-junior-programmer-yang-punya-“akhlaq”"
+  }
+]
