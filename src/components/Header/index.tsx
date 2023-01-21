@@ -12,8 +12,8 @@ import { usePwaInstall } from '@/hooks/usePwaInstall';
 //import { sendEventTracker } from '@/utils/analytics/tracker';
 
 import { InternalLink } from '../Typography/InternalLink';
-//import { useCommandPaletteContext } from '../CommandPalette/hooks/useCommandPaletteContext';
-//import { ThemePicker } from '../Theme/ThemePicker';
+import { useCommandPaletteContext } from '../CommandPalette/hooks/useCommandPaletteContext';
+import { ThemePicker } from '../Theme/ThemePicker';
 
 import PwaInstallIcon from './assets/icon-plus.svg';
 
@@ -36,7 +36,7 @@ function Logo() {
 
 export default function Header() {
   //const { isReady, trigger } = usePwaInstall();
-  //const { setIsOpen } = useCommandPaletteContext();
+  const { setIsOpen } = useCommandPaletteContext();
   const [shouldBeMoreOpaque, setShouldBeMoreOpaque] = useState(false);
 
   /*
@@ -150,14 +150,14 @@ export default function Header() {
               </InternalLink>
               <button
                 className="font-medium text-theme-text hover:text-theme-text rounded-md p-2"
-                // onClick={() => {
-                //   setIsOpen((prev) => !prev);
-                // }}
+                onClick={() => {
+                  setIsOpen((prev) => !prev);
+                }}
               >
                 <code>/cmd</code>
               </button>
 
-              {/* <ThemePicker /> */}
+              <ThemePicker />
             </div>
           </nav>
         </SectionContainer>
