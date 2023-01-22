@@ -55,6 +55,10 @@ const FOOTER_LINKS: FooterSection[] = [
         label: 'About',
         href: '/about',
       },
+      {
+        label: 'Blog',
+        href: '/blog',
+      },
     ],
   },
   {

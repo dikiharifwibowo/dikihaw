@@ -71,7 +71,7 @@ export const LandingHero = () => {
         <Paragraph>
           I am a front-end engineer at{' '}
           <ExternalLink
-            href="https://twitter.com/dikiharifwibowo"
+            href="https://dana.id"
             // onClick={() => {
             //   sendEventTracker({
             //     name: 'click',
@@ -87,7 +87,7 @@ export const LandingHero = () => {
         </Paragraph>
 
         <div className={clsx('mt-8', 'sm:mt-12', 'flex')}>
-          {/* <InternalLink
+          <InternalLink
             className={clsx(baseCtaButton, ctaButton)}
             href="/about"
             // onClick={() => {
@@ -100,7 +100,7 @@ export const LandingHero = () => {
             isNotFancy
           >
             More about me &rarr;
-          </InternalLink> */}
+          </InternalLink>
         </div>
       </div>
     </>

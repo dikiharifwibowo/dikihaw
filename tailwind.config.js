@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './next.config.js',
     './safelists.js',
+    './code-highlighter-token.js',
     './src/**/*.{ts,tsx,js,jsx,mdx}',
   ],
   theme: {

@@ -1,4 +1,4 @@
-const baseUrl = 'https://jackyef-og-img.vercel.app/';
+const baseUrl = 'https://dikihaw.vercel.app/';
 
 interface Params {
   title: string;
