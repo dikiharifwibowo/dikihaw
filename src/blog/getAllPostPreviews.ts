@@ -1,7 +1,7 @@
 import { Author } from './authors';
 
 function importAll(r: any) {
-  return r.keys().map((fileName: string) => ({
+  return r.keys().filter( item => !item.includes('src/pages/posts')).map((fileName: string) => ({
     link: `/posts${fileName.substr(1).replace(/\/index\.mdx$/, '')}`,
     module: r(fileName),
   }));

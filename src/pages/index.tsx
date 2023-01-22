@@ -1,27 +1,25 @@
-import { Inter } from '@next/font/google'
 import { Flipped } from 'react-flip-toolkit';
-import { LandingHero } from '@/components/Hero';
-import { SectionTitle } from '@/components/Typography/SectionTitle';
-import { PageMetaTags } from '@/components/Seo/PageMetaTags';
-import { PostPreviewList } from '@/components/Post/PostPreviewList';
 
-const inter = Inter({ subsets: ['latin'] })
+import { PageMetaTags } from '@/components/Seo/PageMetaTags';
+import { PostPreviewList } from '@/components/Blog/Post/PostPreviewList';
+import { SectionTitle } from '@/components/Typography/SectionTitle';
+import { LandingHero } from '@/components/Hero';
 
 export default function Home() {
   return (
     <>
       <PageMetaTags />
-      <LandingHero/>
+      <LandingHero />
 
       <div className="my-16" />
 
       <Flipped flipId="latest-writing-heading" spring="noWobble" translate>
-      {(flippedProps) => (
-          <SectionTitle {...flippedProps}>Latest Writing</SectionTitle>
+        {(flippedProps) => (
+          <SectionTitle {...flippedProps}>Latest writings ✍️</SectionTitle>
         )}
       </Flipped>
 
-      <PostPreviewList/>
+      <PostPreviewList count={4} />
     </>
-  )
+  );
 }
