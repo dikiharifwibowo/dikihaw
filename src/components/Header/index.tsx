@@ -7,13 +7,11 @@ import { css } from 'goober';
 import { SectionContainer } from '@/components/SectionContainer';
 import { getHslString } from '@/lib/styles/colors';
 
-import { usePwaInstall } from '@/hooks/usePwaInstall';
-
 //import { sendEventTracker } from '@/utils/analytics/tracker';
 
 import { InternalLink } from '../Typography/InternalLink';
-//import { useCommandPaletteContext } from '../CommandPalette/hooks/useCommandPaletteContext';
-//import { ThemePicker } from '../Theme/ThemePicker';
+import { useCommandPaletteContext } from '../CommandPalette/hooks/useCommandPaletteContext';
+import { ThemePicker } from '../Theme/ThemePicker';
 
 import PwaInstallIcon from './assets/icon-plus.svg';
 
@@ -35,8 +33,7 @@ function Logo() {
 }
 
 export default function Header() {
-  //const { isReady, trigger } = usePwaInstall();
-  //const { setIsOpen } = useCommandPaletteContext();
+  const { setIsOpen } = useCommandPaletteContext();
   const [shouldBeMoreOpaque, setShouldBeMoreOpaque] = useState(false);
 
   /*
@@ -109,29 +106,6 @@ export default function Header() {
                   <Logo />
                 </a>
               </Link>
-              <button
-                style={{
-                  opacity: 'isReady ' ? 1 : 0,
-                  transform: 'isReady'
-                    ? 'translateX(0) rotate(0deg)'
-                    : 'translateX(-1rem) rotate(-270deg)',
-                  cursor: 'isReady' ? 'auto' : 'none',
-                  transition:
-                    'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
-                }}
-                // tabIndex={isReady ? 0 : -1}
-                className="self-center w-7 h-7 p-1 rounded-full"
-                // onClick={() => trigger()}
-              >
-                <Image
-                  className="monochrome-img"
-                  src={PwaInstallIcon}
-                  width={20}
-                  height={20}
-                  alt="Add to home screen"
-                  loading="lazy"
-                />
-              </button>
             </div>
             <div className="text-base leading-5 flex items-center space-x-2">
               <InternalLink
@@ -150,14 +124,14 @@ export default function Header() {
               </InternalLink>
               <button
                 className="font-medium text-theme-text hover:text-theme-text rounded-md p-2"
-                // onClick={() => {
-                //   setIsOpen((prev) => !prev);
-                // }}
+                onClick={() => {
+                  setIsOpen((prev) => !prev);
+                }}
               >
                 <code>/cmd</code>
               </button>
 
-              {/* <ThemePicker /> */}
+              <ThemePicker />
             </div>
           </nav>
         </SectionContainer>

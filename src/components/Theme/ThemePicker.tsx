@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
-import XIcon from '@heroicons/react/solid/XIcon';
+import XIcon from '@heroicons/react/24/solid/XMarkIcon';
 import clsx from 'clsx';
 import { css } from 'goober';
 

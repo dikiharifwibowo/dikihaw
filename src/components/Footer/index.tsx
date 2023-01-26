@@ -56,12 +56,8 @@ const FOOTER_LINKS: FooterSection[] = [
         href: '/about',
       },
       {
-        label: 'Tokens',
-        href: '/about/tokens',
-      },
-      {
-        label: 'Uses',
-        href: '/uses',
+        label: 'Blog',
+        href: '/blog',
       },
     ],
   },
@@ -142,6 +138,7 @@ export const Footer = () => {
                           ? ({} as LinkProps)
                           : {
                               href: link.href,
+                              legacyBehavior: true,
                               passHref: true,
                             };
 
