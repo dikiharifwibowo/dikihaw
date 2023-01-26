@@ -21,24 +21,6 @@ export const PAGES: readonly PageData[] = [
       'Get to know me! This page contains what I worked on, where I worked at, where to find me, etc.',
     link: '/about',
   },
-  {
-    title: 'Uses',
-    description: 'List of things that I use daily',
-    link: '/uses',
-  },
-
-  // Tools
-  {
-    title: 'Tools ▶️ Claymorphism',
-    description: `Simple tool for generating for claymorphism-style CSS`,
-    link: '/tools/claymorphism',
-  },
-  {
-    title: 'Tools ▶️ Speech-to-text',
-    description: `Speech-to-text demo using the Web Speech API's SpeechRecognition`,
-    link: '/tools/speech-to-text',
-    hiddenSearchTerm: 'voice',
-  },
 ];
 
 export const filterPages = (query: string): PageData[] => {

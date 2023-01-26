@@ -17,6 +17,12 @@ export const EXTERNAL_LINKS: readonly PageData[] = [
     link: 'https://twitter.com/dikiharifwibowo',
     hiddenSearchTerm: 'social',
   },
+  {
+    title: 'Linkedin',
+    description: 'Follow me on Linkedin!🙂',
+    link: 'https://twitter.com/dikiharifwibowo',
+    hiddenSearchTerm: 'social',
+  },
 ];
 
 export const filterExternalLinks = (query: string): PageData[] => {

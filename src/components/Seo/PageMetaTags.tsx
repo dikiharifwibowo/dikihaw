@@ -73,13 +73,13 @@ export const PageMetaTags: React.FC<Props> = ({
           "dateModified": "${publishDate}",
           "author": {
             "@type": "Person",
-            "@id": "https://twitter.com/dikiharifwibowo",
+            "@id": "dikiharifwibowo",
             "name": "Dikih Arif Wibowo",
             "url": "https://twitter.com/dikiharifwibowo"
           },
           "publisher": {
               "@type": "Person",
-              "@id": "https://twitter.com/dikiharifwibowo",
+              "@id": "dikiharifwibowo",
               "name": "dikiharifwibowo",
               "url": "https://twitter.com/dikiharifwibowo"
           },
